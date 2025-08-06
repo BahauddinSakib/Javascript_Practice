@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <title>Grade Calculator</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+             <div class=" head col-8 m-auto p-4">
+               <h4 class="text-center heading">Grade Calculating system</h4>
+           </div>
+            <div class="head col-8 col-md-12 m-auto d-flex justify-content-around">
+              <div class="col-md-4">
+                 <form>
+                    <div class="val1">
+                        <label class="subject response">C++ :</label>
+                        <input id="book11" class="response" type="number" name="" placeholder="marks">
+                    </div>
+                      <div class="val2">
+                        <label class="subject response">Java :</label>
+                        <input id="book22" class="response" type="number" name="" placeholder="marks">
+                    </div>
+                      <div class="val3">
+                        <label class="subject response">C# :</label>
+                        <input id="book33" class="response" type="number" name="" placeholder="marks">
+                    </div>
+                      <div class="val4">
+                        <label class="subject response">Javascript :</label>
+                        <input id="book44" class="response" type="number" name="" placeholder="marks">
+                    </div>
+                      <div class="val5">
+                        <label class="subject response">PHP :</label>
+                        <input id="book55" class="response" type="number" name="" placeholder="marks">
+                    </div>
+                    <button id="btn1" class="responce" onclick="return calculate_result()" >Calculate</button>
+                 </form>
+              </div>
+
+                   <div class="col-md-4">
+                    <div class="result_1">
+                        <table class="result_tabel">
+                            <tr>
+                                <td class="result_ans"> Total marks: </td>
+                                <td class="result_ans"> 500 </td>
+                            </tr>
+                            <tr>
+                                <td class="result_ans" >Obtained marks: </td>
+                                <td id="obtained" class="result_ans"> </td>
+                            </tr>
+                            <tr>
+                                <td class="result_ans" >Percentage: </td>
+                                <td id="obtained_percentage" class="result_ans" > </td>
+                            </tr>
+                            <tr>
+                                <td class="result_ans" >Grade: </td>
+                                <td id="obtaining_grade" class="result_ans" > </td>
+                            </tr>
+                            <tr>
+                                <td class="result_ans" >Final Result: </td>
+                                <td id="remarks" class="result_ans" > </td>
+                            </tr>
+                        </table>
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
